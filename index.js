@@ -4,7 +4,6 @@ const app = express();
 const connectMongoDB = require("./connection");
 const cookieParser = require("cookie-parser");
 const PORT = 8001;
-const { restrictToLoggedInUserOnly } = require("./middlewares/auth");
 const homeRoute = require("./routes/staticRouter");
 const { registerRoute, logInRoute } = require("./routes/user");
 
