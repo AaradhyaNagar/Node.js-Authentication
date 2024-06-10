@@ -66,8 +66,30 @@ input {
   border: solid black 0.1rem;
   border-radius: 0.25rem;
 }
+.backToLogIn {
+  height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+  background-color: #006eff;
+  border: solid black 0.1rem;
+  border-radius: 0.25rem;
+}
+.backToHome {
+  height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+  background-color: #e5593f;
+  border: solid black 0.1rem;
+  border-radius: 0.25rem;
+}
+.separator {
+  border-top: 1px solid #ddd;
+  margin: 1rem;
+}
 .errorMessage {
-  margin-top: 1rem ;
+  margin-top: 1rem;
   font-size: 1.2rem;
   color: #e20000;
   font-weight: 400;

@@ -41,9 +41,17 @@
           placeholder="Re-Enter Password"
         />
         <button class="signUp" type="submit">Sign Up</button>
+      </form>
+      <form method="GET" action="/app">
+        <div class="separator"></div>
+        <button class="backToLogIn" type="submit">Back To Log In</button>
+      </form>
+      <form method="GET" action="/">
+        <div class="separator"></div>
+        <button class="backToHome" type="submit">Back To Home</button>
         <% if (typeof error !== 'undefined' && error) { %>
-          <div class="errorMessage"><%= error %></div>
-          <% } %>
+        <div class="errorMessage"><%= error %></div>
+        <% } %>
       </form>
     </div>
   </body>
