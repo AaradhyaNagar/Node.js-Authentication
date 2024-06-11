@@ -1,6 +1,6 @@
 const express = require("express");
-const { restrictToLoggedInUserOnly } = require("../middlewares/auth")
 const homeRoute = express.Router();
+const appRoute = express.Router();
 
 homeRoute.get("/", (req, res) => {
   console.log("Hemlo from home page");
@@ -15,8 +15,8 @@ homeRoute.get("/register", (req, res) => {
   return res.render("register-page");
 });
 
-homeRoute.get("/app", restrictToLoggedInUserOnly, (req, res) => {
+appRoute.get("/", (req, res) => {
   return res.render("application-page");
 });
 
-module.exports = homeRoute;
+module.exports = { homeRoute, appRoute };
